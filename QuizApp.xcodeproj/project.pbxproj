@@ -13,6 +13,8 @@
 		6C68ED4024BCB0360035E7A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C68ED3E24BCB0360035E7A2 /* Main.storyboard */; };
 		6C68ED4224BCB0390035E7A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C68ED4124BCB0390035E7A2 /* Assets.xcassets */; };
 		6C68ED4524BCB0390035E7A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C68ED4324BCB0390035E7A2 /* LaunchScreen.storyboard */; };
+		FC27DD3224BCB93E00477567 /* questionPageController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC27DD3124BCB93E00477567 /* questionPageController.storyboard */; };
+		FCC25D3D24BCC6C200CCDADF /* questionPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC25D3B24BCC6C200CCDADF /* questionPageController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		6C68ED4124BCB0390035E7A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C68ED4424BCB0390035E7A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C68ED4624BCB0390035E7A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC27DD3124BCB93E00477567 /* questionPageController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = questionPageController.storyboard; sourceTree = "<group>"; };
+		FCC25D3C24BCC6C200CCDADF /* Base */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Base; path = QuizApp/View/Base.lproj/questionPageController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,7 @@
 		6C68ED4D24BCB05F0035E7A2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FC27DD3124BCB93E00477567 /* questionPageController.storyboard */,
 				6C68ED3E24BCB0360035E7A2 /* Main.storyboard */,
 				6C68ED4324BCB0390035E7A2 /* LaunchScreen.storyboard */,
 			);
@@ -86,6 +91,7 @@
 		6C68ED4E24BCB07C0035E7A2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				FCC25D3B24BCC6C200CCDADF /* questionPageController.swift */,
 				6C68ED3C24BCB0360035E7A2 /* ViewController.swift */,
 			);
 			path = Controller;
@@ -152,6 +158,7 @@
 				6C68ED4524BCB0390035E7A2 /* LaunchScreen.storyboard in Resources */,
 				6C68ED4224BCB0390035E7A2 /* Assets.xcassets in Resources */,
 				6C68ED4024BCB0360035E7A2 /* Main.storyboard in Resources */,
+				FC27DD3224BCB93E00477567 /* questionPageController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +171,7 @@
 			files = (
 				6C68ED3D24BCB0360035E7A2 /* ViewController.swift in Sources */,
 				6C68ED3924BCB0360035E7A2 /* AppDelegate.swift in Sources */,
+				FCC25D3D24BCC6C200CCDADF /* questionPageController.swift in Sources */,
 				6C68ED3B24BCB0360035E7A2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -185,6 +193,14 @@
 				6C68ED4424BCB0390035E7A2 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FCC25D3B24BCC6C200CCDADF /* questionPageController.swift */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCC25D3C24BCC6C200CCDADF /* Base */,
+			);
+			name = questionPageController.swift;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
