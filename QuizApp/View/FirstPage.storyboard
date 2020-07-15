@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--First Page View Controller-->
         <scene sceneID="diB-W9-7ZI">
             <objects>
-                <viewController id="MqE-AC-0cx" sceneMemberID="viewController">
+                <viewController id="MqE-AC-0cx" customClass="FirstPageViewController" customModule="QuizApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CFu-SB-EnE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -74,6 +74,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dzw-Im-N9I"/>
                     </view>
+                    <connections>
+                        <outlet property="signInButton" destination="8gf-Cc-LoI" id="Mpp-Xf-FNJ"/>
+                        <outlet property="signUpButton" destination="IYl-mA-nKL" id="OCm-Nd-xt4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HG9-ud-Htm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
