@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OZM-r3-Hxj">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Login View Controller-->
+        <!--Sign Up View Controller-->
         <scene sceneID="gP5-ly-L2a">
             <objects>
-                <viewController id="OZM-r3-Hxj" customClass="LoginViewController" customModule="QuizApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AppSignUp" useStoryboardIdentifierAsRestorationIdentifier="YES" id="OZM-r3-Hxj" customClass="SignUpViewController" customModule="QuizApp" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sme-SL-ZwA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -29,10 +29,8 @@
                                                 <color key="textColor" red="0.32983972020000002" green="0.78039215689999997" blue="0.4980526509" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Py6-8Y-wbo">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Py6-8Y-wbo">
                                                 <rect key="frame" x="0.0" y="90.5" width="374" height="94.5"/>
-                                                <string key="text">ɳαɱҽ
-</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                                 <color key="textColor" red="0.32983972020000002" green="0.78039215689999997" blue="0.4980526509" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -41,6 +39,9 @@
                                                 <rect key="frame" x="0.0" y="185" width="374" height="75"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="emailEntryBox:" destination="OTc-8S-TaW" eventType="editingDidEnd" id="i7L-Oo-0KY"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -85,6 +86,10 @@
                                         <state key="normal" title="Sign Up!">
                                             <color key="titleColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onSignUpPressed:" destination="OZM-r3-Hxj" eventType="touchUpInside" id="eoM-if-Faf"/>
+                                            <segue destination="vaD-rM-CHv" kind="show" id="0vq-uT-C01"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -99,10 +104,26 @@
                         <viewLayoutGuide key="safeArea" id="nep-av-RSp"/>
                     </view>
                     <navigationItem key="navigationItem" id="rAt-2s-660"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="zD0-tf-Vfj" id="9zk-sq-xv0"/>
+                        <outlet property="passwordTextField" destination="Gv7-uW-23c" id="Eob-7W-INQ"/>
+                        <outlet property="usernameTextField" destination="YPV-bY-mAs" id="BLz-4q-7hJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YJo-V1-XiT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="OTc-8S-TaW" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="872" y="126"/>
+        </scene>
+        <!--QuizSelection-->
+        <scene sceneID="puq-6R-Knr">
+            <objects>
+                <viewControllerPlaceholder storyboardName="QuizSelection" id="vaD-rM-CHv" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Idf-ed-ucS"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C6B-rD-Vdo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1499" y="365"/>
         </scene>
     </scenes>
 </document>

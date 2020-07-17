@@ -66,6 +66,9 @@
                                 <state key="normal" title="Sign Up">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="wtz-fC-FBd" kind="show" id="IxB-YH-8DS"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CaH-Ja-niv">
                                 <rect key="frame" x="20" y="683" width="374" height="64"/>
@@ -116,6 +119,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LLz-DF-rzL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="806" y="321"/>
+        </scene>
+        <!--AppSignUp-->
+        <scene sceneID="3tA-hG-a4c">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AppSignUp" id="wtz-fC-FBd" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="XbA-kk-3Zo"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fss-o1-kya" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="812" y="367"/>
         </scene>
     </scenes>
     <resources>
