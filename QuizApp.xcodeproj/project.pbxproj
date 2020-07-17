@@ -3,12 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		36A28AACC074DCED131A70A8 /* Pods_QuizApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 327B79710D8C1653217F3803 /* Pods_QuizApp.framework */; };
-		4F186EA624BFB9F200FAB3DE /* FirstPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F186EA524BFB9F200FAB3DE /* FirstPage.storyboard */; };
 		4F186EA824BFBADC00FAB3DE /* FirstPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F186EA724BFBADC00FAB3DE /* FirstPageViewController.swift */; };
 		6C68ED3924BCB0360035E7A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C68ED3824BCB0360035E7A2 /* AppDelegate.swift */; };
 		6C68ED3B24BCB0360035E7A2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C68ED3A24BCB0360035E7A2 /* SceneDelegate.swift */; };
@@ -19,13 +18,15 @@
 		6C68ED5524BCC1E00035E7A2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C68ED5424BCC1E00035E7A2 /* LoginViewController.swift */; };
 		6CC4158F24BF76B3007B4546 /* AppLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CC4158E24BF76B3007B4546 /* AppLogin.storyboard */; };
 		6CE3DD3624C1FD72008FBA17 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6CE3DD3524C1FD72008FBA17 /* GoogleService-Info.plist */; };
+		6CE3DD3824C20376008FBA17 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE3DD3724C20376008FBA17 /* SignUpViewController.swift */; };
+		6CE3DD3924C20732008FBA17 /* AppSignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CE3DD3424C1F2E0008FBA17 /* AppSignUp.storyboard */; };
+		6CE3DD3A24C20797008FBA17 /* QuizSelection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CE3DD3324C1F281008FBA17 /* QuizSelection.storyboard */; };
 		FC27DD3224BCB93E00477567 /* questionPageController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC27DD3124BCB93E00477567 /* questionPageController.storyboard */; };
 		FCC25D3D24BCC6C200CCDADF /* questionPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC25D3B24BCC6C200CCDADF /* questionPageController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		327B79710D8C1653217F3803 /* Pods_QuizApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuizApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4F186EA524BFB9F200FAB3DE /* FirstPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FirstPage.storyboard; sourceTree = "<group>"; };
 		4F186EA724BFBADC00FAB3DE /* FirstPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FirstPageViewController.swift; path = QuizApp/View/FirstPageViewController.swift; sourceTree = SOURCE_ROOT; };
 		6C68ED3524BCB0360035E7A2 /* QuizApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuizApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C68ED3824BCB0360035E7A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +41,7 @@
 		6CE3DD3324C1F281008FBA17 /* QuizSelection.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = QuizSelection.storyboard; path = "/Users/ccorpuz/Desktop/Swift SU20/QuizApp/QuizApp/View/QuizSelection.storyboard"; sourceTree = "<absolute>"; };
 		6CE3DD3424C1F2E0008FBA17 /* AppSignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = AppSignUp.storyboard; path = "/Users/ccorpuz/Desktop/Swift SU20/QuizApp/QuizApp/View/AppSignUp.storyboard"; sourceTree = "<absolute>"; };
 		6CE3DD3524C1FD72008FBA17 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6CE3DD3724C20376008FBA17 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		98DEA06C2F8FCE2094A06B0B /* Pods-QuizApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuizApp.debug.xcconfig"; path = "Target Support Files/Pods-QuizApp/Pods-QuizApp.debug.xcconfig"; sourceTree = "<group>"; };
 		CBEF8360DDE50AC6B1E61AF8 /* Pods-QuizApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuizApp.release.xcconfig"; path = "Target Support Files/Pods-QuizApp/Pods-QuizApp.release.xcconfig"; sourceTree = "<group>"; };
 		FC27DD3124BCB93E00477567 /* questionPageController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = questionPageController.storyboard; sourceTree = "<group>"; };
@@ -104,7 +106,6 @@
 				6CE3DD3324C1F281008FBA17 /* QuizSelection.storyboard */,
 				FC27DD3124BCB93E00477567 /* questionPageController.storyboard */,
 				6C68ED3E24BCB0360035E7A2 /* Main.storyboard */,
-				4F186EA524BFB9F200FAB3DE /* FirstPage.storyboard */,
 				6C68ED4324BCB0390035E7A2 /* LaunchScreen.storyboard */,
 				6CC4158E24BF76B3007B4546 /* AppLogin.storyboard */,
 				6CE3DD3424C1F2E0008FBA17 /* AppSignUp.storyboard */,
@@ -119,6 +120,7 @@
 				FCC25D3B24BCC6C200CCDADF /* questionPageController.swift */,
 				6C68ED3C24BCB0360035E7A2 /* ViewController.swift */,
 				6C68ED5424BCC1E00035E7A2 /* LoginViewController.swift */,
+				6CE3DD3724C20376008FBA17 /* SignUpViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -129,7 +131,6 @@
 				98DEA06C2F8FCE2094A06B0B /* Pods-QuizApp.debug.xcconfig */,
 				CBEF8360DDE50AC6B1E61AF8 /* Pods-QuizApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -204,9 +205,10 @@
 				6CC4158F24BF76B3007B4546 /* AppLogin.storyboard in Resources */,
 				6C68ED4524BCB0390035E7A2 /* LaunchScreen.storyboard in Resources */,
 				6C68ED4224BCB0390035E7A2 /* Assets.xcassets in Resources */,
+				6CE3DD3924C20732008FBA17 /* AppSignUp.storyboard in Resources */,
 				6C68ED4024BCB0360035E7A2 /* Main.storyboard in Resources */,
-				4F186EA624BFB9F200FAB3DE /* FirstPage.storyboard in Resources */,
 				FC27DD3224BCB93E00477567 /* questionPageController.storyboard in Resources */,
+				6CE3DD3A24C20797008FBA17 /* QuizSelection.storyboard in Resources */,
 				6CE3DD3624C1FD72008FBA17 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F186EA824BFBADC00FAB3DE /* FirstPageViewController.swift in Sources */,
+				6CE3DD3824C20376008FBA17 /* SignUpViewController.swift in Sources */,
 				6C68ED5524BCC1E00035E7A2 /* LoginViewController.swift in Sources */,
 				6C68ED3D24BCB0360035E7A2 /* ViewController.swift in Sources */,
 				6C68ED3924BCB0360035E7A2 /* AppDelegate.swift in Sources */,
