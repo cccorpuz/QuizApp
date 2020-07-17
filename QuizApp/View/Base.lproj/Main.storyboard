@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zHp-h4-zjd">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -7,20 +7,118 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Navigation Controller-->
+        <scene sceneID="XeT-jM-TAR">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="QuizApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <navigationController id="zHp-h4-zjd" sceneMemberID="viewController">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gAl-b6-uIX">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Gh3-KP-byj">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="wCn-R9-qbM" kind="relationship" relationship="rootViewController" id="p4t-FC-XI8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PvK-Mk-Mcd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-697" y="131"/>
+        </scene>
+        <!--First Page View Controller-->
+        <scene sceneID="5kD-lF-RJu">
+            <objects>
+                <viewController wantsFullScreenLayout="YES" modalPresentationStyle="fullScreen" id="wCn-R9-qbM" customClass="FirstPageViewController" customModule="QuizApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dmc-4V-e6d">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rosette" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="IXu-Lj-Dgb">
+                                <rect key="frame" x="53" y="87" width="308" height="370"/>
+                                <color key="tintColor" red="0.45379251339999999" green="0.1803310055" blue="0.86264674860000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="369" id="DRx-EF-xqq"/>
+                                    <constraint firstAttribute="width" constant="308" id="WCm-ak-3Eg"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgot password?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nYq-oB-Lg8">
+                                <rect key="frame" x="138.5" y="821" width="137" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quiz App" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CaL-nG-6ch">
+                                <rect key="frame" x="141.5" y="130" width="131" height="177"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="177" id="g9f-Hy-b5X"/>
+                                    <constraint firstAttribute="width" constant="131" id="zKA-jS-5W1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NgD-mf-bkd">
+                                <rect key="frame" x="20" y="577" width="374" height="64"/>
+                                <color key="backgroundColor" red="0.13151252860000001" green="0.7657299823" blue="0.85004452720000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="32"/>
+                                <state key="normal" title="Sign Up">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CaH-Ja-niv">
+                                <rect key="frame" x="20" y="683" width="374" height="64"/>
+                                <color key="backgroundColor" red="0.13151252860000001" green="0.7657299823" blue="0.85004452720000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="32"/>
+                                <state key="normal" title="Sign In">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="A6n-sa-IeO" kind="show" id="Xrk-Zq-3GK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="IXu-Lj-Dgb" firstAttribute="centerX" secondItem="dmc-4V-e6d" secondAttribute="centerX" id="02I-ha-7lf"/>
+                            <constraint firstItem="CaL-nG-6ch" firstAttribute="top" secondItem="qdA-LD-RQa" secondAttribute="top" constant="42" id="7n3-FF-QvK"/>
+                            <constraint firstItem="nYq-oB-Lg8" firstAttribute="top" secondItem="CaH-Ja-niv" secondAttribute="bottom" constant="74" id="8bp-e6-Edt"/>
+                            <constraint firstItem="IXu-Lj-Dgb" firstAttribute="top" secondItem="qdA-LD-RQa" secondAttribute="top" id="VjW-Mc-Axy"/>
+                            <constraint firstItem="CaH-Ja-niv" firstAttribute="height" secondItem="NgD-mf-bkd" secondAttribute="height" id="YQO-kh-nN7"/>
+                            <constraint firstItem="CaH-Ja-niv" firstAttribute="top" secondItem="NgD-mf-bkd" secondAttribute="bottom" constant="42" id="Z68-BS-PB5"/>
+                            <constraint firstItem="qdA-LD-RQa" firstAttribute="bottom" secondItem="nYq-oB-Lg8" secondAttribute="bottom" constant="20" id="gNo-qa-fuN"/>
+                            <constraint firstItem="CaL-nG-6ch" firstAttribute="centerX" secondItem="dmc-4V-e6d" secondAttribute="centerX" id="gT1-g7-AwQ"/>
+                            <constraint firstItem="qdA-LD-RQa" firstAttribute="trailing" secondItem="NgD-mf-bkd" secondAttribute="trailing" constant="20" id="qe7-XW-fAm"/>
+                            <constraint firstItem="nYq-oB-Lg8" firstAttribute="centerX" secondItem="dmc-4V-e6d" secondAttribute="centerX" id="xhG-Vs-l9F"/>
+                            <constraint firstItem="NgD-mf-bkd" firstAttribute="leading" secondItem="qdA-LD-RQa" secondAttribute="leading" constant="20" id="y0Y-by-SYG"/>
+                            <constraint firstItem="qdA-LD-RQa" firstAttribute="trailing" secondItem="CaH-Ja-niv" secondAttribute="trailing" constant="20" id="yae-22-flh"/>
+                            <constraint firstItem="CaH-Ja-niv" firstAttribute="leading" secondItem="qdA-LD-RQa" secondAttribute="leading" constant="20" id="z0C-Pr-DrF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qdA-LD-RQa"/>
                     </view>
+                    <navigationItem key="navigationItem" id="D2Y-Gx-bBb"/>
+                    <connections>
+                        <outlet property="signInButton" destination="CaH-Ja-niv" id="p4d-kE-vgJ"/>
+                        <outlet property="signUpButton" destination="NgD-mf-bkd" id="TQv-sW-vQz"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GnG-PQ-7zO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="126"/>
+            <point key="canvasLocation" x="121.73913043478262" y="130.58035714285714"/>
+        </scene>
+        <!--AppLogin-->
+        <scene sceneID="pmE-xc-Lbx">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AppLogin" id="A6n-sa-IeO" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="6gy-cW-WPw"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LLz-DF-rzL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="806" y="321"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="rosette" catalog="system" width="100" height="128"/>
+    </resources>
 </document>

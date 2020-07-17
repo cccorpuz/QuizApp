@@ -44,7 +44,7 @@
                                                 <color key="textColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="jax-MD-DA6">
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="jax-MD-DA6">
                                                 <rect key="frame" x="20" y="160" width="274" height="230"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P0P-Oe-3hh">
@@ -209,7 +209,9 @@
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
                                             <constraint firstItem="jax-MD-DA6" firstAttribute="top" secondItem="v4S-Uy-x0v" secondAttribute="bottom" constant="25" id="32X-W1-L0E"/>
+                                            <constraint firstItem="jax-MD-DA6" firstAttribute="leading" secondItem="QFw-sP-xTW" secondAttribute="leading" constant="20" id="84Y-x1-UhM"/>
                                             <constraint firstItem="v4S-Uy-x0v" firstAttribute="centerX" secondItem="QFw-sP-xTW" secondAttribute="centerX" id="E62-4f-UAA"/>
+                                            <constraint firstItem="jax-MD-DA6" firstAttribute="centerX" secondItem="v4S-Uy-x0v" secondAttribute="centerX" id="LYr-0k-hAV"/>
                                             <constraint firstItem="J0W-FC-hjc" firstAttribute="centerX" secondItem="QFw-sP-xTW" secondAttribute="centerX" id="LvF-F6-9oX"/>
                                             <constraint firstItem="v4S-Uy-x0v" firstAttribute="leading" secondItem="QFw-sP-xTW" secondAttribute="leading" id="Mwc-QP-iAZ"/>
                                             <constraint firstItem="J0W-FC-hjc" firstAttribute="top" secondItem="QFw-sP-xTW" secondAttribute="top" constant="50" id="Q2v-go-do5"/>

@@ -2,6 +2,15 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:QuizApp.xcodeproj">
+      location = "group:../../../../Downloads/GoogleService-Info.plist">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/ccorpuz/Desktop/Swift SU20/QuizApp/QuizApp/View/AppSignUp.storyboard">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/ccorpuz/Desktop/Swift SU20/QuizApp/QuizApp/View/QuizSelection.storyboard">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>
